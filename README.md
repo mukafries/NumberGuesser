@@ -17,16 +17,18 @@ It is presented in an algorithmic and a pseudocode format
 2. Start do-while loop
 3. Read user input and store it as UserGuess
 4. If UserGuess is not between 0 and 10:
-   a. show message "Please input a valid number between 0-10
+   a. show message "Please input a valid number between 0-10"
    b. Go back to step 3
+   Else If UserGuess <0 OR UserGuess>10:
+   a. show message "Please enter a valid number between 0-10"
    else:
 
    - if userGuess = randomNumber:
-     i. show message "Hooray! You guessed correctly"
-     ii. exit loop
-     else:
-     i. show message "Guess incorrect"
-     ii. Go back to step 2
+     - show message "Hooray! You guessed correctly"
+     - exit loop
+   - else:
+     - show message "Guess incorrect"
+     - Go back to step 3
 
 ### PSEUDOCODE-ISH
 
@@ -42,7 +44,7 @@ if(userGuess is not number || (userGuess < 0 || userGuess >10)):
 else:
 
     if (UserGuess = randomNumber):
-      isEqual == True
+      isEqual = True
     else if (UserGuess < randomNumber):
       showMessage("Your guess is lower, try again")
     else if (UserGuess > randomNumber):
@@ -52,8 +54,6 @@ else:
 
 showMessage("Hooray! You have guessed correctly and won 200 naira")
 End of program
-
-
 
 ##Ireti's Feedback
 I think you should include the (> or <) condition to your algorithm. This will allow for a seamless match between your algorithm and pseudocode while ensuring the core condition of the project is implemented.
