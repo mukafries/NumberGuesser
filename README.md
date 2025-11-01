@@ -1,35 +1,36 @@
 #NumberGuesser-Game-Algorithm
-Project Author: Blessing Adeyemi
-Version: 1.0
-Project Reviewer: Ireti George
 
-##About Game
+##Project Author: Blessing Adeyemi
+##Version: 1.0
+##Project Reviewer: Ireti George
+
+##Description
 This is a number guessing game to guess a randomly generated number between 0-10.
 It is presented in an algorithmic and a pseudocode format
 
-##Algorithm
+###Algorithm
 
 1. Create a random number called randomNumber
-2. read user input and store it as UserGuess
-3. If UserGuess is not between 0 and 10:
-   i. show message "Please input a valid number between 0-10
-   ii. Go back to step 2
+2. Start do-while loop
+3. Read user input and store it as UserGuess
+4. If UserGuess is not between 0 and 10:
+   a. show message "Please input a valid number between 0-10
+   b. Go back to step 2
    else:
-   i. if userGuess = randomNumber:
-   show message "Hooray! You guessed correctly"
-   exit program
-   else:
-   show message "Guess incorrect"
-   Go back to step 2
+   - if userGuess = randomNumber:
+     i. show message "Hooray! You guessed correctly"
+     ii. exit loop
+     else:
+     i. show message "Guess incorrect"
+     ii. Go back to step 2
 
-##PSEUDOCODE-ISH
+###PSEUDOCODE-ISH
 randomNumber = random(0-10)
 isEqual = False
 
 do{
 userGuess = readInput()
-
-if(userGuess is not number || (userGuess < 0 || >10)):
+if(userGuess is not number || (userGuess < 0 || userGuess >10)):
 
     showMessage("Please input a valid number between 0 and 10")
 
