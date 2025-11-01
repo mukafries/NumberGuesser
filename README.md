@@ -47,3 +47,8 @@ else:
 
 showMessage("Hooray! You have guessed correctly and won 200 naira")
 End of program
+
+
+
+##Ireti's Feedback
+I think you should include the (> or <) condition to your algorithm. This will allow for a seamless match between your algorithm and pseudocode while ensuring the core condition of the project is implemented.
